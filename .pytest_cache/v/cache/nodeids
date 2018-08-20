@@ -1,5 +1,4 @@
 [
-  "FizzBuzz_test.py::test_can_call_fizz_buzz",
   "FizzBuzz_test.py::test_return_1_for_1",
   "FizzBuzz_test.py::test_return_2_for_2",
   "FizzBuzz_test.py::test_return_fizz_for_3",

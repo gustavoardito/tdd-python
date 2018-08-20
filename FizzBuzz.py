@@ -1,8 +1,11 @@
 def fizz_buzz(value):
-    return str(value) if value % 5 != 0 and value % 3 != 0 else (
-        '{}{}'.format(
-            'Fizz' if value % 3 == 0 else '',
-            'Buzz' if value % 5 == 0 else '',
-        )
+    return (
+        'FizzBuzz' if is_multiple(value, 5) else 'Fizz'
+    ) if is_multiple(value, 3) else (
+        'Buzz' if is_multiple(value, 5) else str(value)
     )
+
+
+def is_multiple(value, mod):
+    return value % mod == 0
 

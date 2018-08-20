@@ -1,0 +1,10 @@
+[
+  "FizzBuzz_test.py::test_can_call_fizz_buzz",
+  "FizzBuzz_test.py::test_return_1_for_1",
+  "FizzBuzz_test.py::test_return_2_for_2",
+  "FizzBuzz_test.py::test_return_fizz_for_3",
+  "FizzBuzz_test.py::test_return_buzz_for_5",
+  "FizzBuzz_test.py::test_return_fizz_for_6",
+  "FizzBuzz_test.py::test_return_buzz_for_10",
+  "FizzBuzz_test.py::test_return_fizz_buzz_for_15"
+]

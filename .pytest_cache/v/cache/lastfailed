@@ -1,0 +1,4 @@
+{
+  "FizzBuzz_test.py::TestFizzBuzz::test_canCallFizzBuzz": true,
+  "FizzBuzz_test.py::Test_TestIncrementDecrement::test_decrement": true
+}

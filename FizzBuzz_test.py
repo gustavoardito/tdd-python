@@ -10,7 +10,6 @@ def test_return_1_for_1():
     _validate_fizz_buzz(1, '1')
 
 
-
 def test_return_2_for_2():
     _validate_fizz_buzz(2, '2')
 

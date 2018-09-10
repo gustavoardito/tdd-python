@@ -1,26 +1,13 @@
 import pytest
 
 
-@pytest.fixture(scope='session', autouse=True)
-def setupSession():
-    print('\nSetup Session')
+@pytest.fixture(params=[1,2,3])
+def setup(request):
+    ret_val = request.param
+    print('\nSetup! ret_val = {}'.format(ret_val))
+    return ret_val
 
 
-@pytest.fixture(scope='module', autouse=True)
-def setupModule():
-    print('\nSetup Module')
-
-
-@pytest.fixture(scope='function', autouse=True)
-def setupFunction():
-    print('\nSetup Function')
-
-
-def test1():
-    print("Executing test1!")
-    assert True
-
-
-def test2():
-    print("Executing test2!")
+def test1(setup):
+    print('\nsetup = {}'.format(setup))
     assert True

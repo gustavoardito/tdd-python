@@ -1,32 +1,26 @@
 import pytest
 
 
-@pytest.fixture()
-def setup1():
-    print("\nSetup 1")
-    yield
-    print("\nTeardown 1")
+@pytest.fixture(scope='session', autouse=True)
+def setupSession():
+    print('\nSetup Session')
 
 
-@pytest.fixture()
-def setup2(request):
-    print("\nSetup 2")
-
-    def teardown_a():
-        print("\nTeardown A")
-
-    def teardown_b():
-        print("\nTeardown B")
-
-    request.addfinalizer(teardown_a)
-    request.addfinalizer(teardown_b)
+@pytest.fixture(scope='module', autouse=True)
+def setupModule():
+    print('\nSetup Module')
 
 
-def test1(setup1):
+@pytest.fixture(scope='function', autouse=True)
+def setupFunction():
+    print('\nSetup Function')
+
+
+def test1():
     print("Executing test1!")
     assert True
 
 
-def test2(setup2):
+def test2():
     print("Executing test2!")
     assert True

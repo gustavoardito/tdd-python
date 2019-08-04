@@ -1,6 +1,6 @@
 
 import pytest
-from tdd_python.Checkout.checkout import Checkout
+from Checkout.checkout import Checkout
 
 
 @pytest.fixture()

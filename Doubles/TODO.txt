@@ -1,0 +1,4 @@
+- X  can call read from file
+- read from file return correct string
+- read_from_file throws exception when file
+  doesn't exist

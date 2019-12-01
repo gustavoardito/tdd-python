@@ -2,5 +2,6 @@
   "tests/units/test_checkout.py::test_can_calculate_total",
   "tests/units/test_checkout.py::test_get_correct_total_with_multiple_items",
   "tests/units/test_checkout.py::test_can_add_discount_rule",
-  "tests/units/test_checkout.py::test_can_apply_discount_rule"
+  "tests/units/test_checkout.py::test_can_apply_discount_rule",
+  "tests/units/test_checkout.py::test_exception_with_bad_item"
 ]

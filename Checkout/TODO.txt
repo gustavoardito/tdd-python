@@ -1,0 +1,17 @@
+- Can create instance of Checkout class
+- Can add item price
+- Can add an item
+- Can calculate the current total
+- Can add multiple items and get correct total
+- Can add discount rules
+- Can apply discount rules to the total
+- Exceptio is throw if item is added without a price
+
+
+Now that you've implemented the SuperMarket Checkout
+Kata while following along with the video lecture
+try adding another test case to have the production
+code generate an exception if there was an error reading a line from the file.
+Questions for this assignment
+
+How did you get the test code to introduce the error that the production code was not able to read a line from the file?

@@ -1,3 +1,6 @@
+import os
+
+
 class Checkout:
     class Discount:
         def __init__(self, num_of_items, price):
@@ -8,6 +11,21 @@ class Checkout:
         self.prices = {}
         self.discounts = {}
         self.items = {}
+
+    def get_prices(self, prices_file):
+        if not os.path.exists(prices_file):
+            raise Exception('File do not exists.')
+        prices = {}
+        prices_file = open(prices_file, 'r')
+        prices_str = [
+            line
+            for line in prices_file.readlines()
+        ]
+        for row in prices_str:
+            p = row.split(';')
+            prices[p[0]] = int(p[1])
+
+        return prices
 
     def add_discount(self, item, number_of_items, price):
         discount = self.Discount(number_of_items, price)
